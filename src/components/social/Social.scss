@@ -1,0 +1,21 @@
+.social-links{
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #3e414b;
+  box-shadow: 0px -1px 0px 0px #0a0c11;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  li{
+    list-style: none;
+    display: inline-block;
+    a{
+      display: block;
+      margin: 0 15px;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}
