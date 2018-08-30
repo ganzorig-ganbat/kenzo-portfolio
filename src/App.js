@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faBold, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBold, faGlobe, faCode, faMoon, faCompass, faFutbol, faMobile, faHeart, faCloud } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { Sidebar } from "./container/sidebar";
 import { Content } from "./container/content";
@@ -10,7 +10,7 @@ import { Nav } from "./components/nav";
 import { Social } from "./components/social";
 import { Home } from "./components/home";
 
-library.add(fab, faBars, faBold, faGlobe);
+library.add(fab, faBars, faBold, faGlobe, faCode, faMoon, faCompass, faFutbol, faMobile, faHeart, faCloud);
 
 class App extends Component {
   render() {
