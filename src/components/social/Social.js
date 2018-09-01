@@ -4,24 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class Social extends Component {
   render() {
-    return (
-      <ul className="social-links">
+    return <ul className="social-links">
         <li className="linkedin">
-          <a href="#" target="_blank">
-            <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
+          <a href="https://www.linkedin.com/in/ganzorig-ganbat/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>
         </li>
         <li className="github">
-          <a href="#">
-            <FontAwesomeIcon icon={["fab", "github"]} size="2x" />
+          <a href="https://github.com/swganzo" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
         </li>
         <li className="web">
-          <a href="#">
-            <FontAwesomeIcon icon="globe" size="2x" />
+          <a href="https://swganzo.github.io/">
+            <FontAwesomeIcon icon="globe" />
           </a>
         </li>
-      </ul>
-    );
+      </ul>;
   }
 }

@@ -1,39 +1,54 @@
 import React, { Component } from "react";
 import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 export default class Nav extends Component {
   render() {
-    return (
-      <nav>
+    return <nav>
         <ul className="navigation">
           <li>
-            <a href="#">
+            <Link to="/">
               <strong>
-                <FontAwesomeIcon icon={["fab", "adn"]} size="2x" />
+                <FontAwesomeIcon icon="h-square" />
               </strong>
-              <span>About</span>
-            </a>
+              <span>Home</span>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/about">
               <strong>
-                <FontAwesomeIcon icon={["fab", "wordpress"]} size="2x" />
+                <FontAwesomeIcon icon={["fab", "adn"]} />
+              </strong>
+              <span>About</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/work">
+              <strong>
+                <FontAwesomeIcon icon={["fab", "wordpress"]} />
                 <i className="fa-w" />
               </strong>
               <span>Work</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/blog">
               <strong>
-                <FontAwesomeIcon icon="bold" size="2x" />
+                <FontAwesomeIcon icon="bold" />
               </strong>
               <span>Blog</span>
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
+              <strong>
+                <FontAwesomeIcon icon="copyright" />
+              </strong>
+              <span>Contact</span>
+            </Link>
           </li>
         </ul>
-      </nav>
-    );
+      </nav>;
   }
 }

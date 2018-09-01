@@ -1,5 +1,8 @@
 main {
   position: relative;
   height: 100%;
-  margin-left: 335px;
+  margin-left: 55px;
   transition: all .15s ease-in-out; }
+
+.nav-open main {
+  margin-left: 185px; }

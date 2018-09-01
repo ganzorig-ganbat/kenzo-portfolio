@@ -4,8 +4,8 @@ import './NavButton.css';
 
 export default class NavButton extends Component {
   render() {
-    return <button className="navbutton">
-        <FontAwesomeIcon icon="bars" size="2x" />
+    return <button onClick={this.props.click} className="navbutton">
+        <FontAwesomeIcon icon="bars" />
       </button>;
   }
 }

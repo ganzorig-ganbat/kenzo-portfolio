@@ -1,6 +1,10 @@
 .navbutton {
   background: none;
-  color: white;
+  color: #dcdcdc;
   border: none;
-  margin: 60px 30px;
-  padding: 0px; }
+  margin: 45px 15px;
+  padding: 0px;
+  font-size: 1.6em;
+  transition: all .15s ease-in-out; }
+  .navbutton:hover {
+    color: white; }

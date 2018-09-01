@@ -96,7 +96,8 @@ export default class Home extends Component {
     let arr = [];
 
     for (let i = 0; i < icons.length; i++) {
-      arr.push({ offsetX: 0, offsetY: 0, friction: 0.02 });
+      const fric = (i%2===0) ? 0.03 : 0.02;
+      arr.push({ offsetX: 0, offsetY: 0, friction: fric });
     }
 
     this.state = {
