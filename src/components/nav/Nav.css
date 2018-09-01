@@ -10,6 +10,10 @@
       padding: 15px 0;
       border-bottom: 1px solid #0a0c11;
       box-shadow: 0px 1px 0px 0px #3e414b; }
+      .navigation li a.active {
+        color: white;
+        background-color: #037cec;
+        border-color: #037cec; }
       .navigation li a strong {
         display: inline-block;
         width: 55px;
@@ -21,7 +25,6 @@
         display: inline-block;
         margin: 0 15px;
         font-size: 1.2em;
-        transition: all .15s ease-in-out;
         visibility: hidden; }
       .navigation li a:hover {
         color: white; }

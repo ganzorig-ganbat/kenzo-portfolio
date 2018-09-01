@@ -1,0 +1,19 @@
+@keyframes blinker {
+  50% {
+    opacity: 0.2; } }
+
+.main-container .about-container {
+  min-height: 900px; }
+  .main-container .about-container .col-21 {
+    width: 45%; }
+
+.tag-cloud {
+  margin-top: 50px; }
+  .tag-cloud span {
+    font-family: "Montserrat", sans-serif;
+    animation: blinker 3s linear infinite;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    display: inline-block;
+    color: #595959; }

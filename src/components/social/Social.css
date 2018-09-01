@@ -15,7 +15,8 @@
     font-size: 1em; }
     .social-links li a {
       display: block;
-      margin: 10px 15px; }
+      margin: 10px 15px;
+      text-align: center; }
       .social-links li a:hover {
         color: white; }
 

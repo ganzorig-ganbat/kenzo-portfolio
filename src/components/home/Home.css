@@ -1,36 +1,24 @@
-.home-wrapper {
+.home-container {
   height: 100%;
   position: relative; }
-  .home-wrapper .canvas {
+  .home-container .canvas {
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
     z-index: 1; }
-    .home-wrapper .canvas div {
+    .home-container .canvas div {
       position: absolute; }
-
-.home {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .home h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.188em;
-    color: #0164ec;
-    max-width: 630px;
-    background: -webkit-linear-gradient(#0164ec, #0471ec);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  .home h3 {
-    max-width: 600px;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 40px; }
+  .home-container .home-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .home-container .home-wrapper .home {
+      max-width: 630px; }

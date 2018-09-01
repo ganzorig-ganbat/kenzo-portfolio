@@ -136,19 +136,19 @@ export default class Home extends Component {
         </div>;
     });
 
-    return (
-      <div className="home-wrapper" onMouseMove={this._mouseMove}>
+    return <div className="home-container" onMouseMove={this._mouseMove}>
         <div className="canvas">{items}</div>
-        <div className="home">
+        <div className="home-wrapper">
+          <div className="home">
           <h1>
             A frontend developor focusing on modern & clean user interfaces.
           </h1>
           <h3>
-            I'm a frontend developer that has been specialising in web design
-            and development for the past 5 years.
+            I'm a frontend developer that has been specialising in web
+            design and development for the past 5 years.
           </h3>
         </div>
-      </div>
-    );
+        </div>
+      </div>;
   }
 }

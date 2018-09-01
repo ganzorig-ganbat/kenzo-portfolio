@@ -1,54 +1,56 @@
 import React, { Component } from "react";
 import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default class Nav extends Component {
   render() {
-    return <nav>
+    return (
+      <nav>
         <ul className="navigation">
           <li>
-            <Link to="/">
+            <NavLink to="/" exact activeClassName="active">
               <strong>
                 <FontAwesomeIcon icon="h-square" />
               </strong>
               <span>Home</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">
+            <NavLink to="/about" activeClassName="active">
               <strong>
                 <FontAwesomeIcon icon={["fab", "adn"]} />
               </strong>
               <span>About</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/work">
+            <NavLink to="/work" activeClassName="active">
               <strong>
                 <FontAwesomeIcon icon={["fab", "wordpress"]} />
                 <i className="fa-w" />
               </strong>
               <span>Work</span>
-            </Link>
+            </NavLink>
           </li>
-          <li>
-            <Link to="/blog">
+          {/* <li>
+            <NavLink to="/blog" activeClassName="active">
               <strong>
                 <FontAwesomeIcon icon="bold" />
               </strong>
               <span>Blog</span>
-            </Link>
-          </li>
+            </NavLink>
+          </li> */}
           <li>
-            <Link to="/contact">
+            <NavLink to="/contact" activeClassName="active">
               <strong>
                 <FontAwesomeIcon icon="copyright" />
               </strong>
               <span>Contact</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
-      </nav>;
+      </nav>
+    );
   }
 }
