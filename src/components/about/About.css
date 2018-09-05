@@ -2,18 +2,26 @@
   50% {
     opacity: 0.2; } }
 
-.main-container .about-container {
-  min-height: 900px; }
-  .main-container .about-container .col-21 {
-    width: 45%; }
+.main-container .about-container h1 {
+  background: -webkit-linear-gradient(#0164ec, #0471ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.main-container .about-container .col-21 {
+  width: 45%; }
+
+.about-content-wrapper {
+  margin-bottom: 60px; }
 
 .tag-cloud {
-  margin-top: 50px; }
+  margin-top: 70px;
+  margin-bottom: 60px; }
   .tag-cloud span {
     font-family: "Montserrat", sans-serif;
     animation: blinker 3s linear infinite;
     margin: 10px;
     padding: 5px 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-transform: uppercase;
     display: inline-block;
     color: #595959; }

@@ -1,0 +1,29 @@
+.sidebar{
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  left: 0px;
+  bottom: 0px;
+  background-color: #191d28;
+  color: #dcdcdc;
+  height: 100%;
+  width: 55px;
+  float: left;
+  transition: all .15s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a{
+    color: #dcdcdc;
+    &:hover{
+      color: white;
+    }
+  }
+}
+.nav-open{
+  .sidebar{
+    width: 185px;
+  }
+}

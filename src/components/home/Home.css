@@ -22,3 +22,7 @@
     text-align: center; }
     .home-container .home-wrapper .home {
       max-width: 630px; }
+      .home-container .home-wrapper .home h1 {
+        background: -webkit-linear-gradient(#0164ec, #0471ec);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }

@@ -1,0 +1,18 @@
+.main-container .work-container {
+  justify-content: flex-start; }
+  .main-container .work-container h1 {
+    background: -webkit-linear-gradient(#0164ec, #0471ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .main-container .work-container .col-11 {
+    width: 100%;
+    margin: 60px; }
+  .main-container .work-container .work-description {
+    max-width: 700px; }
+
+.main-container .work-content-portfolio {
+  margin: 30px 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px; }

@@ -24,6 +24,11 @@
     text-align: center;
     .home {
       max-width: 630px;
+      h1 {
+        background: -webkit-linear-gradient(#0164ec, #0471ec);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 }
