@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./Home.css";
+import "./NoMatch.css";
 import Icons from "./../../utils/Icons";
-import { data_home } from "./../../utils/Data";
+import { Link } from "react-router-dom";
 
-export default class Home extends Component {
+export default class NoMatch extends Component {
   constructor(props) {
     super(props);
 
@@ -58,11 +57,11 @@ export default class Home extends Component {
         <div className="canvas">{items}</div>
         <div className="home-wrapper">
           <div className="home">
-            <h1>{data_home.title}</h1>
-            <h3>{data_home.subtitle}</h3>
+            <h1>404 not found</h1>
+            <h3>Something went wrong</h3>
             <p className="link-wrapper">
-              <Link to="/about" className="link">
-                Contact Me
+              <Link to="/" className="link">
+                Back to Home page
               </Link>
             </p>
           </div>

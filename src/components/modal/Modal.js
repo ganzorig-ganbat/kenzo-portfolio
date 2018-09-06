@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Modal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import img from "./digitaleyes.jpg";
+import { data_work } from "./../../utils/Data";
 
 export default class Modal extends Component {
   constructor(props) {
@@ -20,10 +20,14 @@ export default class Modal extends Component {
   }
 
   render() {
-    const work = this.props.match.params.slug;
+    const work = data_work.portfolios.find(
+      x => x.slug === this.props.match.params.slug
+    );
     if (!work) {
       return null;
     }
+
+    const tags = work.tags.map(tag => `#${tag}`).join(", ");
 
     return <div className="modal-wrapper" onClick={this.back}>
         <div onClick={this.dontGoBack} className="modal-container">
@@ -33,13 +37,13 @@ export default class Modal extends Component {
 
           <div className="modal-header">
             <div className="img-wrapper">
-              <img src={img} alt="" />
+              <img src={work.img} alt="" />
             </div>
             <div className="title-wrapper">
-              <h1 className="title">Digitaleyes Agency Web</h1>
-              <p className="tags">#Wordpress, #HTML5, #css3</p>
+              <h1 className="title">{work.title}</h1>
+              <p className="tags">{tags}</p>
               <p className="link-wrapper">
-                <a href="#" className="link" target="_blank">
+                <a href={work.link} className="link" target="_blank">
                   Visit Site
                 </a>
               </p>
@@ -47,38 +51,11 @@ export default class Modal extends Component {
           </div>
 
           <div className="modal-body">
+            <p>{work.content}</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sapiente, ipsum aut quasi maxime ex sint numquam, voluptatem
-              tempora, soluta dolore cumque nisi? Aliquid laboriosam sit cum
-              minima quae. Non, odit?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sapiente, ipsum aut quasi maxime ex sint numquam, voluptatem
-              tempora, soluta dolore cumque nisi? Aliquid laboriosam sit cum
-              minima quae. Non, odit?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sapiente, ipsum aut quasi maxime ex sint numquam, voluptatem
-              tempora, soluta dolore cumque nisi? Aliquid laboriosam sit cum
-              minima quae. Non, odit?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sapiente, ipsum aut quasi maxime ex sint numquam, voluptatem
-              tempora, soluta dolore cumque nisi? Aliquid laboriosam sit cum
-              minima quae. Non, odit?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Sapiente, ipsum aut quasi maxime ex sint numquam, voluptatem
-              tempora, soluta dolore cumque nisi? Aliquid laboriosam sit cum
-              minima quae. Non, odit?
-            </p>
-            <p>
-              <a href="#" className="link">Visit Site</a>
+              <a href={work.link} className="link">
+                Visit Site
+              </a>
             </p>
           </div>
         </div>

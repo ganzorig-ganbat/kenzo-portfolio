@@ -28,9 +28,8 @@ import { Home } from "../../components/home";
 import { About } from "../../components/about";
 import { Work } from "../../components/work";
 import { Modal } from "../../components/modal";
-import { Blog } from "../../components/blog";
-import { Contact } from "../../components/contact";
 import { NotModal } from "../../components/notmodal";
+import { NoMatch } from "../../components/nomatch";
 
 library.add(
   fab,
@@ -84,7 +83,8 @@ export default class Main extends Component {
       location.state.modal &&
       this.previousLocation !== location
     ); // not initial render
-    return <div id="page" className={sidebarClass}>
+    return (
+      <div id="page" className={sidebarClass}>
         <Sidebar>
           <div className="logo-nav">
             <Logo click={this.toggleNav} />
@@ -101,11 +101,13 @@ export default class Main extends Component {
             <Route path="/about" component={About} />
             <Route exact path="/work" component={Work} />
             <Route path="/work/:slug" component={NotModal} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/contact" component={Contact} />
+            <Route component={NoMatch} />
+            {/* <Route path="/blog" component={Blog} />
+            <Route path="/contact" component={Contact} /> */}
           </Switch>
           {isModal ? <Route path="/work/:slug" component={Modal} /> : null}
         </Content>
-      </div>;
+      </div>
+    );
   }
 }

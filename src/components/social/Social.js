@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Social.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { data_socials } from "./../../utils/Data";
 
 export default class Social extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class Social extends Component {
       <ul className="social-links">
         <li className="linkedin">
           <a
-            href="https://www.linkedin.com/in/ganzorig-ganbat/"
+            href={data_socials.linkedin}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -17,7 +18,7 @@ export default class Social extends Component {
         </li>
         <li className="github">
           <a
-            href="https://github.com/ganzorig-ganbat"
+            href={data_socials.github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +26,7 @@ export default class Social extends Component {
           </a>
         </li>
         <li className="web">
-          <a href="https://ganzorig-ganbat.github.io/">
+          <a href={data_socials.web}>
             <FontAwesomeIcon icon="globe" />
           </a>
         </li>

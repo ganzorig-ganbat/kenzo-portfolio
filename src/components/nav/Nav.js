@@ -41,14 +41,14 @@ export default class Nav extends Component {
               <span>Blog</span>
             </NavLink>
           </li> */}
-          <li>
+          {/* <li>
             <NavLink to="/contact" activeClassName="active">
               <strong>
                 <FontAwesomeIcon icon="copyright" />
               </strong>
               <span>Contact</span>
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
     );

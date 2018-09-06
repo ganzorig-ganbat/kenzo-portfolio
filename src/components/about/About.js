@@ -1,32 +1,11 @@
 import React, { Component } from "react";
 import { TagCloud } from "react-tagcloud";
-import './About.css';
+import "./About.css";
+import { data_about } from "./../../utils/Data";
 
-const data = [
-  { value: "JavaScript", count: 50 },
-  { value: "React", count: 50 },
-  { value: "NodeJS", count: 50 },
-  { value: "ExpressJS", count: 50 },
-  { value: "HTML5", count: 50 },
-  { value: "MongoDB", count: 50 },
-  { value: "Wordpress", count: 50 },
-  { value: "JSON", count: 50 },
-  { value: "jQuery", count: 50 },
-  { value: "PHP", count: 50 },
-  { value: "Sass", count: 50 },
-  { value: "Gulp", count: 50 },
-  { value: "Webpack", count: 50 },
-  { value: "BEM", count: 50 },
-  { value: "Git", count: 50 },
-  { value: "XML", count: 50 },
-  { value: "VueJS", count: 50 },
-  { value: "RESTful API", count: 50 },
-  { value: "MySQL", count: 50 },
-  { value: "Ajax", count: 50 },
-  { value: "Angular", count: 50 },
-  { value: "Laravel", count: 50 },
-  { value: "CSS3", count: 50 }
-];
+const data = data_about.skills.map(skill => {
+  return { value: skill, count: 50 };
+});
 
 const colors = ["#d71717", "#0b72f1", "#22ce0b"];
 
@@ -49,18 +28,8 @@ export default class About extends Component {
       <div className="container about-container">
         <div className="col col-21 about-content">
           <div className="about-content-wrapper">
-            <h1>About me</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ad ducimus dolore tenetur quaerat ipsum enim aliquid repellat repellendus dolorem vero voluptatem, harum adipisci obcaecati! Voluptatem natus accusantium hic voluptates.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ad ducimus dolore tenetur quaerat ipsum enim aliquid repellat repellendus dolorem vero voluptatem, harum adipisci obcaecati! Voluptatem natus accusantium hic voluptates.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ad ducimus dolore tenetur quaerat ipsum enim aliquid repellat repellendus dolorem vero voluptatem, harum adipisci obcaecati! Voluptatem natus accusantium hic voluptates.
-            </p>
+            <h1>{data_about.title}</h1>
+            <p>{data_about.content}</p>
           </div>
         </div>
 
