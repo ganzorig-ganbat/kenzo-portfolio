@@ -1,15 +1,14 @@
 .navigation {
   margin: 0px;
   padding: 0px;
-  list-style: none;
-  width: 185px; }
+  list-style: none; }
   .navigation li {
+    display: inline-block;
     margin: 0px; }
     .navigation li a {
       display: block;
-      padding: 15px 0;
-      border-bottom: 1px solid #0a0c11;
-      box-shadow: 0px 1px 0px 0px #3e414b; }
+      padding: 9px 0;
+      border-bottom: 1px solid transparent; }
       .navigation li a.active {
         color: white;
         background-color: #037cec;
@@ -20,14 +19,36 @@
         text-align: center;
         font-size: 1.6em; }
       .navigation li a span {
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-        display: inline-block;
-        margin: 0 15px;
-        font-size: 1.2em;
-        visibility: hidden; }
+        display: none; }
       .navigation li a:hover {
         color: white; }
 
 .nav-open .navigation span {
   visibility: visible; }
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    width: 185px; }
+    .navigation li {
+      display: block;
+      margin: 0px; }
+      .navigation li a {
+        padding: 15px 0;
+        border-color: 1px solid #0a0c11;
+        box-shadow: 0px 1px 0px 0px #3e414b; }
+        .navigation li a strong {
+          display: inline-block;
+          width: 55px;
+          text-align: center;
+          font-size: 1.6em; }
+        .navigation li a span {
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          display: inline-block;
+          margin: 0 15px;
+          font-size: 1.2em;
+          visibility: hidden; }
+        .navigation li a:hover {
+          color: white; }
+  .nav-open .navigation span {
+    visibility: visible; } }

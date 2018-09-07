@@ -2,20 +2,20 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
-  width: 185px;
   li {
+    display: inline-block;
     margin: 0px;
     a {
       display: block;
-      padding: 15px 0;
-      border-bottom: 1px solid #0a0c11;
-      box-shadow: 0px 1px 0px 0px #3e414b;
+      padding: 9px 0;
+      border-bottom: 1px solid transparent;
 
-      &.active{
+      &.active {
         color: white;
         background-color: #037cec;
         border-color: #037cec;
       }
+
       strong {
         display: inline-block;
         width: 55px;
@@ -23,12 +23,7 @@
         font-size: 1.6em;
       }
       span {
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-        display: inline-block;
-        margin: 0 15px;
-        font-size: 1.2em;
-        visibility: hidden;
+        display: none;
       }
 
       &:hover {
@@ -43,4 +38,57 @@
       visibility: visible;
     }
   }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .navigation {
+    width: 185px;
+    li {
+      display: block;
+      margin: 0px;
+      a {
+        padding: 15px 0;
+        border-color: 1px solid #0a0c11;
+        box-shadow: 0px 1px 0px 0px #3e414b;
+
+        strong {
+          display: inline-block;
+          width: 55px;
+          text-align: center;
+          font-size: 1.6em;
+        }
+        span {
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          display: inline-block;
+          margin: 0 15px;
+          font-size: 1.2em;
+          visibility: hidden;
+        }
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .nav-open {
+    .navigation {
+      span {
+        visibility: visible;
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
 }

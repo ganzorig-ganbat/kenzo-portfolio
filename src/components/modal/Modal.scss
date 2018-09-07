@@ -8,7 +8,7 @@
   overflow: auto;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 30px;
+  padding: 2em;
 
   .modal-container {
     margin: 0 auto;
@@ -29,7 +29,7 @@
       color: white;
       margin: 5px 10px 0 0;
       padding: 0;
-      font-size: 1.6em;
+      font-size: 1.4em;
       transition: opacity 0.15s ease-in-out;
       z-index: 39;
       &:hover {
@@ -66,14 +66,14 @@
         left: 0px;
         right: 0px;
         width: 100%;
-        padding: 0 30px;
+        padding: 0 2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
       .title {
         color: white;
-        font-size: 2.3em;
+        font-size: 1.7em;
         margin: 0;
         margin-bottom: 10px;
         text-align: center;
@@ -95,7 +95,23 @@
     }
 
     .modal-body {
-      padding: 30px;
+      padding: 2em;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal-wrapper {
+    .modal-container {
+      .x-button {
+        font-size: 1.6em;
+      }
+
+      .modal-header {
+        .title {
+          color: white;
+          font-size: 2.3em;
+        }
+      }
     }
   }
 }

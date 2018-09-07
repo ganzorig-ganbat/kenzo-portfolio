@@ -1,29 +1,63 @@
-.logo-container{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: 1px solid #0a0c11;
-  box-shadow: 0px 1px 0px 0px #3e414b;
-  .logo-wrapper{
-    margin: 30px 15px;
-    .logo-img{
-      width: 90px;
-      height: 90px;
-      display: block;
+.logo-container {
+  .navbutton {
+    display: none;
+  }
+  .logo-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 3px;
+    .logo-img {
+      display: none;
+      width: 40px;
+      height: 40px;
       overflow: hidden;
       border-radius: 3px;
       margin-bottom: 0px;
-      img{
+      img {
         display: block;
         max-width: 100%;
         height: auto;
       }
     }
-    span{
+    span {
       font-size: 1.5625em;
       font-weight: bold;
       font-family: "Montserrat", sans-serif;
     }
   }
-  
+}
+
+@media only screen and (min-width: 260px) {
+  .logo-container {
+    .logo-wrapper {
+      .logo-img {
+        display: block;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #0a0c11;
+    box-shadow: 0px 1px 0px 0px #3e414b;
+    .navbutton {
+      display: block;
+    }
+    .logo-wrapper {
+      position: relative;
+      left: auto;
+      top: auto;
+      margin: 30px 15px;
+      .logo-img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
 }

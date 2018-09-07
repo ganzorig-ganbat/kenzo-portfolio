@@ -13,8 +13,8 @@ body,
 #root,
 #page {
   position: relative;
-  height: 100%;
   width: 100%;
+  min-width: 165px;
 }
 * {
   box-sizing: border-box;
@@ -42,8 +42,8 @@ a {
   transition: all 0.15s ease-in-out;
 }
 
-.link-wrapper{
-  text-align: center;
+.link-wrapper {
+  text-align: left;
 }
 .link {
   font-size: 0.8em;
@@ -65,6 +65,15 @@ a {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  html,
+  body,
+  #root,
+  #page {
+    height: 100%;
+  }
+  .link-wrapper {
+    text-align: center;
+  }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
