@@ -24,12 +24,33 @@
   span {
     font-family: "Montserrat", sans-serif;
     animation: blinker 3s linear infinite;
-    margin: .4em .6em 0 0;
+    margin: 0.4em 0.6em 0 0;
     padding: 3px 5px;
     font-size: 0.8em;
     text-transform: uppercase;
     display: inline-block;
     color: #595959;
+  }
+}
+.about-social-wrapper {
+  .social-links {
+    margin: 0px;
+    padding: 0px;
+    li {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      display: inline-block;
+      a {
+        font-size: 1.1em;
+        color: #0164ec;
+        display: block;
+        margin-right: 10px;
+        &:hover{
+          color: #0471ec;
+        }
+      }
+    }
   }
 }
 @media only screen and (min-width: 576px) {

@@ -15,7 +15,8 @@ import {
   faCloud,
   faHSquare,
   faCopyright,
-  faWindowClose
+  faWindowClose,
+  faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
 import { Switch, Route } from "react-router-dom";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -45,7 +46,8 @@ library.add(
   faCloud,
   faHSquare,
   faCopyright,
-  faWindowClose
+  faWindowClose,
+  faEnvelope
 );
 
 export default class Main extends Component {

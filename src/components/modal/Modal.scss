@@ -12,6 +12,7 @@
 
   .modal-container {
     margin: 0 auto;
+    padding: 0 0 2em;
     width: 100%;
     max-width: 940px;
     box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.5);
@@ -41,6 +42,10 @@
       position: relative;
       color: white;
       .img-wrapper {
+        min-height: 200px;
+        background: #fafafa;
+        display: flex;
+        align-items: center;
         position: relative;
         img {
           width: 100%;
@@ -95,7 +100,11 @@
     }
 
     .modal-body {
-      padding: 2em;
+      margin: 2em;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
 }

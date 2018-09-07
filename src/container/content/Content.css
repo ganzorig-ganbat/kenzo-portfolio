@@ -9,11 +9,10 @@ main {
     color: #0164ec; }
   main h3 {
     font-size: 1.1em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7; }
   main p {
     font-size: 1em;
-    font-weight: 300;
     line-height: 1.7;
     text-align: justify; }
   main img {

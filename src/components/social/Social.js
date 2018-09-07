@@ -25,9 +25,9 @@ export default class Social extends Component {
             <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
         </li>
-        <li className="web">
-          <a href={data_socials.web}>
-            <FontAwesomeIcon icon="globe" />
+        <li className="email">
+          <a href={"mailto:"+data_socials.email}>
+            <FontAwesomeIcon icon="envelope" />
           </a>
         </li>
       </ul>

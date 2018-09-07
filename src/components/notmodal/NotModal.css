@@ -1,6 +1,9 @@
 main .portfolio-container .portfolio-content {
   width: 100%;
   margin: 0; }
+  main .portfolio-container .portfolio-content img {
+    display: block;
+    margin: 0 auto; }
 
 .portfolio-content-wrapper {
   margin: 2em; }
@@ -9,6 +12,10 @@ main .portfolio-container .portfolio-content {
   position: relative;
   color: white; }
   .portfolio-header .img-wrapper {
+    min-height: 200px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
     position: relative; }
     .portfolio-header .img-wrapper img {
       width: 100%;
@@ -54,7 +61,8 @@ main .portfolio-container .portfolio-content {
     text-align: center; }
 
 .portfolio-body {
-  margin: 2em 0; }
+  max-width: 900px;
+  margin: 2em auto; }
 
 @media only screen and (min-width: 768px) {
   .portfolio-header .title {

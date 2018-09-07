@@ -3,6 +3,7 @@ import { TagCloud } from "react-tagcloud";
 import "./About.css";
 import { data_about } from "./../../utils/Data";
 import ReactMarkdown from "react-markdown";
+import { Social } from "../../components/social";
 
 const data = data_about.skills.map(skill => {
   return { value: skill, count: 50 };
@@ -35,6 +36,10 @@ export default class About extends Component {
           <div className="about-content-wrapper">
             <h1>{data_about.title}</h1>
             <ReactMarkdown source={data_about.content} />
+
+            <div className="about-social-wrapper">
+              <Social />
+            </div>
           </div>
         </div>
 

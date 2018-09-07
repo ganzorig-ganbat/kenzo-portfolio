@@ -3,6 +3,10 @@ main {
     .portfolio-content {
       width: 100%;
       margin: 0;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -14,6 +18,10 @@ main {
   position: relative;
   color: white;
   .img-wrapper {
+    min-height: 200px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
     position: relative;
     img {
       width: 100%;
@@ -67,7 +75,8 @@ main {
   }
 }
 .portfolio-body {
-  margin: 2em 0;
+  max-width: 900px;
+  margin: 2em auto;
 }
 @media only screen and (min-width: 768px) {
   .portfolio-header {

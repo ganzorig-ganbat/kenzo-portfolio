@@ -1,4 +1,4 @@
-.social-links {
+.sidebar .social-links {
   display: block;
   margin: 0;
   padding: 0;
@@ -9,16 +9,16 @@
   justify-content: center;
   align-content: center;
   padding: 10px 0; }
-  .social-links li {
+  .sidebar .social-links li {
     list-style: none;
     display: inline-block;
     font-size: 1em; }
-    .social-links li a {
+    .sidebar .social-links li a {
       display: block;
       margin: 10px 15px;
       text-align: center; }
-      .social-links li a:hover {
+      .sidebar .social-links li a:hover {
         color: white; }
 
-.nav-open .social-links {
+.nav-open .sidebar .social-links {
   flex-direction: row; }
