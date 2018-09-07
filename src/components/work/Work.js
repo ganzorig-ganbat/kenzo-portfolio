@@ -6,6 +6,9 @@ import { data_work } from "./../../utils/Data";
 const works = data_work.portfolios;
 
 export default class Work extends Component {
+  componentDidMount() {
+    document.title = "Ganzorig.me - Works";
+  }
   render() {
     const works_arr = works.map(work => (
       <Perwork key={work.id} details={work} />

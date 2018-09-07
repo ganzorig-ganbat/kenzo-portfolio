@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Modal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { data_work } from "./../../utils/Data";
+import ReactMarkdown from "react-markdown";
 
 export default class Modal extends Component {
   constructor(props) {
@@ -28,8 +29,10 @@ export default class Modal extends Component {
     }
 
     const tags = work.tags.map(tag => `#${tag}`).join(", ");
+    document.title = "Ganzorig.me - " + work.title;
 
-    return <div className="modal-wrapper" onClick={this.back}>
+    return (
+      <div className="modal-wrapper" onClick={this.back}>
         <div onClick={this.dontGoBack} className="modal-container">
           <button type="button" className="x-button" onClick={this.back}>
             <FontAwesomeIcon icon="window-close" />
@@ -51,7 +54,7 @@ export default class Modal extends Component {
           </div>
 
           <div className="modal-body">
-            <p>{work.content}</p>
+            <ReactMarkdown source={work.content} />
             <p>
               <a href={work.link} className="link">
                 Visit Site
@@ -59,6 +62,7 @@ export default class Modal extends Component {
             </p>
           </div>
         </div>
-      </div>;
+      </div>
+    );
   }
 }

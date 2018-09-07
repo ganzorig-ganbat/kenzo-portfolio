@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./NotModal.css";
 import { data_work } from "./../../utils/Data";
 import { NoMatch } from "./../nomatch";
+import ReactMarkdown from "react-markdown";
 
 export default class Modal extends Component {
   render() {
@@ -10,10 +11,11 @@ export default class Modal extends Component {
     );
 
     if (!work) {
-      return <NoMatch/>;
+      return <NoMatch />;
     }
 
     const tags = work.tags.map(tag => `#${tag}`).join(", ");
+    document.title = "Ganzorig.me - " + work.title;
 
     return (
       <div className="container portfolio-container">
@@ -35,7 +37,7 @@ export default class Modal extends Component {
             </div>
 
             <div className="portfolio-body">
-              <p>{work.content}</p>
+              <ReactMarkdown source={work.content} />
               <p>
                 <a href={work.link} className="link">
                   Visit Site

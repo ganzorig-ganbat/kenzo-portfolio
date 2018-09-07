@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { TagCloud } from "react-tagcloud";
 import "./About.css";
 import { data_about } from "./../../utils/Data";
+import ReactMarkdown from "react-markdown";
 
 const data = data_about.skills.map(skill => {
   return { value: skill, count: 50 };
@@ -23,13 +24,17 @@ const customRenderer = tag => (
 );
 
 export default class About extends Component {
+  componentDidMount() {
+    document.title = "Ganzorig.me - About Ganzorig Ganbat";
+  }
+
   render() {
     return (
       <div className="container about-container">
         <div className="col col-21 about-content">
           <div className="about-content-wrapper">
             <h1>{data_about.title}</h1>
-            <p>{data_about.content}</p>
+            <ReactMarkdown source={data_about.content} />
           </div>
         </div>
 

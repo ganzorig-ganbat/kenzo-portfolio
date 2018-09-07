@@ -12,14 +12,20 @@ export default class Home extends Component {
 
     for (let i = 0; i < Icons.length; i++) {
       const fric = i % 2 === 0 ? 0.03 : 0.02;
-      arr.push({ offsetX: 0, offsetY: 0, friction: fric });
+      arr.push({
+        offsetX: 0,
+        offsetY: 0,
+        friction: fric
+      });
     }
 
-    this.state = {
-      iconState: arr
-    };
+    this.state = { iconState: arr };
 
     this._mouseMove = this._mouseMove.bind(this);
+  }
+
+  componentDidMount() {
+    document.title = "Ganzorig.me - Ganzorig Ganbat's Portfolio";
   }
 
   _mouseMove(e) {
@@ -33,9 +39,7 @@ export default class Home extends Component {
       item.offsetY = -followY * item.friction;
     });
 
-    this.setState({
-      iconState: arr
-    });
+    this.setState({ iconState: arr });
   }
 
   render() {
