@@ -51,15 +51,32 @@ library.add(
 export default class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = { navOpen: true };
+
+    let navOpen = this.getItem();
+
+    this.state = { navOpen: navOpen };
 
     this.toggleNav = this.toggleNav.bind(this);
   }
 
+  getItem(){
+    const ret = localStorage.getItem("navOpen");
+
+    if (ret === null ){
+      localStorage.setItem("navOpen", "true");
+      return true;
+    }
+
+    return ret === "true" ? true : false;
+  }
+
   toggleNav() {
+    const state = !this.state.navOpen;
     this.setState({
-      navOpen: !this.state.navOpen
+      navOpen: state
     });
+
+    localStorage.setItem("navOpen", `${state}`);
   }
 
   previousLocation = this.props.location;
