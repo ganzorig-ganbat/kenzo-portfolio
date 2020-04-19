@@ -83,7 +83,7 @@ const data_work = {
         "LAMP",
       ],
       content:
-        'Devsor is an international team made up of experienced entrepreneurs and highly skilled developers, all passionate about creating extraordinary customer experiences and serious about revolutionizing e-commerce.\n\nI have built Devsor.com from design to development using Laravel PHP framework, SASS, GULP and jQuery.\n\n![Devsor](https://www.devsor.com/images/workplace.png "Devsor")\n',
+        "Devsor is an international team made up of experienced entrepreneurs and highly skilled developers, all passionate about creating extraordinary customer experiences and serious about revolutionizing e-commerce.\n\nI have built Devsor.com from design to development using Laravel PHP framework, SASS, GULP and jQuery.\n",
     },
     {
       id: 2,
