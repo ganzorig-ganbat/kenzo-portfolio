@@ -5,19 +5,19 @@ import { data_about } from "./../../utils/Data";
 import ReactMarkdown from "react-markdown";
 import { Social } from "../../components/social";
 
-const data = data_about.skills.map(skill => {
+const data = data_about.skills.map((skill) => {
   return { value: skill, count: 50 };
 });
 
 const colors = ["#d71717", "#0b72f1", "#22ce0b"];
 
-const customRenderer = tag => (
+const customRenderer = (tag) => (
   <span
     key={tag.value}
     style={{
       animation: "blinker 3s linear infinite",
       animationDelay: `${Math.random() * 2}s`,
-      borderBottom: `1px solid ${colors[Math.floor(Math.random() * 3)]}`
+      borderBottom: `1px solid ${colors[Math.floor(Math.random() * 3)]}`,
     }}
   >
     {tag.value}
