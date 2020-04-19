@@ -69,7 +69,8 @@ const data_work = {
       slug: "devsor",
       title: "Devsor.com",
       featured_img: fdevsor,
-      link: "https://www.devsor.com/",
+      link:
+        "https://web.archive.org/web/20180827115733/https://www.devsor.com/",
       img: devsor,
       tags: [
         "laravel",
@@ -111,7 +112,7 @@ const data_work = {
       slug: "boldlu",
       title: "Bold Luvsanvandan - Personal website",
       featured_img: fboldlu,
-      link: "http://boldlu.mn/",
+      link: "https://web.archive.org/web/20180924035416/http://boldlu.mn:80/",
       img: boldlu,
       tags: ["wordpress", "html5", "css3", "jquery", "responsive"],
       content:
@@ -122,7 +123,7 @@ const data_work = {
       slug: "kewiko",
       title: "Kewiko - Wifi Mongolia",
       featured_img: fkewiko,
-      link: "http://digitaltheme.co/admag/",
+      link: "https://web.archive.org/web/20191011040031/http://kewiko.mn/",
       img: kewiko,
       tags: ["wordpress", "html5", "css3", "jquery"],
       content:
