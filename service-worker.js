@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ganzorig-ganbat/kenzo-portfolio/precache-manifest.8983eeb77ab07d1ba4442191de7b2835.js"
+  "/ganzorig-ganbat/kenzo-portfolio/precache-manifest.09f52918689dee20a57e4c3b38cedcba.js"
 );
 
 self.addEventListener('message', (event) => {

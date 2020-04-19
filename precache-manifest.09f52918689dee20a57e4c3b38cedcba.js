@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65f4d6a502c55572c9baf4f037acdf62",
+    "revision": "458ab69ec6a648df5c8d4d498229c1b1",
     "url": "/ganzorig-ganbat/kenzo-portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ganzorig-ganbat/kenzo-portfolio/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "0e4cf1366cf86cda1737",
+    "revision": "f9a68552c6109d2468e1",
     "url": "/ganzorig-ganbat/kenzo-portfolio/static/css/main.c8f5a733.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ganzorig-ganbat/kenzo-portfolio/static/js/2.5e380108.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0e4cf1366cf86cda1737",
-    "url": "/ganzorig-ganbat/kenzo-portfolio/static/js/main.add94a9f.chunk.js"
+    "revision": "f9a68552c6109d2468e1",
+    "url": "/ganzorig-ganbat/kenzo-portfolio/static/js/main.d7224614.chunk.js"
   },
   {
     "revision": "172186a911c67d488e1c",
