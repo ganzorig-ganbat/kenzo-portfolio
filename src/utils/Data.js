@@ -21,7 +21,7 @@ const data_socials = {
 
 const data_home = {
   title:
-    "A full-stack developer focusing on modern & pixel perfect interfaces.",
+    "A full-stack developer focusing on modern & pixel perfect web applications.",
   subtitle:
     "I'm a full-stack developer that has been specialising in web development for the past 7 years. I'm very passionate about to build pixel perfect web applications using latest frameworks, web services, and design patterns.",
 };
