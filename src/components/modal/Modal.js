@@ -22,13 +22,13 @@ export default class Modal extends Component {
 
   render() {
     const work = data_work.portfolios.find(
-      x => x.slug === this.props.match.params.slug
+      (x) => x.slug === this.props.match.params.slug
     );
     if (!work) {
       return null;
     }
 
-    const tags = work.tags.map(tag => `#${tag}`).join(", ");
+    const tags = work.tags.map((tag) => `#${tag}`).join(", ");
     document.title = "Ganzorig.me - " + work.title;
 
     return (
@@ -56,7 +56,7 @@ export default class Modal extends Component {
           <div className="modal-body">
             <ReactMarkdown source={work.content} />
             <p>
-              <a href={work.link} className="link">
+              <a href={work.link} className="link" target="_blank">
                 Visit Site
               </a>
             </p>
