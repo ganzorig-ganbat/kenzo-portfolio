@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/ganzorig-ganbat/kenzo-portfolio/static/css/main.c8f5a733.chunk.css",
+    "main.js": "/ganzorig-ganbat/kenzo-portfolio/static/js/main.add94a9f.chunk.js",
+    "main.js.map": "/ganzorig-ganbat/kenzo-portfolio/static/js/main.add94a9f.chunk.js.map",
+    "runtime-main.js": "/ganzorig-ganbat/kenzo-portfolio/static/js/runtime-main.0664fb70.js",
+    "runtime-main.js.map": "/ganzorig-ganbat/kenzo-portfolio/static/js/runtime-main.0664fb70.js.map",
+    "static/css/2.764ccc25.chunk.css": "/ganzorig-ganbat/kenzo-portfolio/static/css/2.764ccc25.chunk.css",
+    "static/js/2.5e380108.chunk.js": "/ganzorig-ganbat/kenzo-portfolio/static/js/2.5e380108.chunk.js",
+    "static/js/2.5e380108.chunk.js.map": "/ganzorig-ganbat/kenzo-portfolio/static/js/2.5e380108.chunk.js.map",
+    "index.html": "/ganzorig-ganbat/kenzo-portfolio/index.html",
+    "precache-manifest.8983eeb77ab07d1ba4442191de7b2835.js": "/ganzorig-ganbat/kenzo-portfolio/precache-manifest.8983eeb77ab07d1ba4442191de7b2835.js",
+    "service-worker.js": "/ganzorig-ganbat/kenzo-portfolio/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/ganzorig-ganbat/kenzo-portfolio/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.c8f5a733.chunk.css.map": "/ganzorig-ganbat/kenzo-portfolio/static/css/main.c8f5a733.chunk.css.map",
+    "static/js/2.5e380108.chunk.js.LICENSE.txt": "/ganzorig-ganbat/kenzo-portfolio/static/js/2.5e380108.chunk.js.LICENSE.txt",
+    "static/media/admag.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/admag.80c913c9.jpg",
+    "static/media/boldlu.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/boldlu.cf4156a1.jpg",
+    "static/media/devsor.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/devsor.c2ecada5.jpg",
+    "static/media/deyes.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/deyes.3f33d834.jpg",
+    "static/media/embassy.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/embassy.faef8fea.jpg",
+    "static/media/fadmag.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/fadmag.7c37dacf.jpg",
+    "static/media/fboldlu.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/fboldlu.579c578b.jpg",
+    "static/media/fdevsor.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/fdevsor.b19943e5.jpg",
+    "static/media/fdeyes.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/fdeyes.1e54e739.jpg",
+    "static/media/fembassy.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/fembassy.7c5df0dc.jpg",
+    "static/media/fkewiko.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/fkewiko.0b3d6065.jpg",
+    "static/media/fpolitik.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/fpolitik.710b74bc.jpg",
+    "static/media/kewiko.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/kewiko.5f967767.jpg",
+    "static/media/logo.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/logo.63f7a024.jpg",
+    "static/media/politik.jpg": "/ganzorig-ganbat/kenzo-portfolio/static/media/politik.7fc9be1a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0664fb70.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.5e380108.chunk.js",
+    "static/css/main.c8f5a733.chunk.css",
+    "static/js/main.add94a9f.chunk.js"
+  ]
+}
